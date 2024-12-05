@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #f4f4f49b;
+  color: #f3e4e4;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+/* Header style*/
+.header {
+  background-color: #774f4f;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-size: 24px;
+  color: white;
+}
+.header nav {
+  display: flex;
+  gap: 40px;
+}
+.header nav a {
+  color: white;
+  font-weight: bold;
+}
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer style */
+
+footer {
+  background-color: #3d2f2f;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+}
+
+/* Home style */
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 60px;
+}
+.hero h1 {
+  font-size: 55px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
+}
+.p {
+  font-size: 30px;
+  margin-top: 10px;
+}
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #7e6767;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.hero button:hover {
+  background-color: #333;
+}
+
+/* About style */
+.about {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 80px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+}
+.about-content {
+  max-width: 500px;
+  text-align: left;
+  padding: 30px;
+  border-radius: 10px;
+}
+.about-content p {
+  padding-top: 20px;
+}
+/* watches style */
+
+.watches {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+  margin: 50px;
+  color: black;
+}
+.watche-card {
+  width: 100px;
+  background-color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+.watche-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.watche-card h3 {
+  margin-top: 10px;
+}
+.watch-card p {
+  color: #555;
+  font-size: 14px;
+}
+.watch-card .price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #d46565;
+}
+.watch-card button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #6f4a4a;
+  color: white;
+
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.watch-card button:hover {
+  background-color: #2d1b1b;
+}
+.watch-card img {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.watch-card:hover img {
+  transform: scale(1.1);
+}
+/* Contact */
+
+.contact-form{
+  max-width: 600px;
+  margin: 50px;
+  padding: 20px;
+  background-color: rgb(120, 69, 69);
+  box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
+}
+
+.contact-form input,
+.contact-form textarea{
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #533535;
+  border-radius: 5px;
+}
+.contact-form button{
+  padding: 10px 20px;
+  background-color:#895050 ;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+.contact-form button:hover{
+
+  background-color: #745353;
+}
+
+/* Fade-in animation */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+}
+.fade-in{
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
+}
+/* Responsive */
+
+@media (max-width: 768px)  {
+  .header{
+    flex-direction: column;
+    text-align: center;
+  }
+  .header .logo{
+    margin-bottom: 10px;
+  }
+
+  .header nav{
+    flex-direction: column;
+    gap:  20px;
+    align-items: center;
+  }
+  .hero{
+    height: 70px;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero h1{
+    font-size: 36px;
+  }
+   .hero p{
+    font-size: 18px;
+  }
+  .hero button{
+    width: 100px;
+    padding: 12px;
+    font-size: 16px;
+  }
+  .watches{
+    grid-template-columns: 1fr;
+    margin: 20px;
+  }
+  .about {
+    padding: 40px 20px;
+    height: auto;
+  }
+  .about-content{
+    width: 100%;
+    padding: 20px;
+  }
+  .contact-form{
+    margin: 20px;
+    padding: 20px;
+  }
+  
+}
