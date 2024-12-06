@@ -1,8 +1,10 @@
+/* Global Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   background-color: #f4f4f49b;
@@ -14,13 +16,11 @@ a {
   color: #333;
 }
 
-h1,
-h2,
-h3 {
+h1, h2, h3 {
   font-weight: bold;
 }
 
-/* Header style*/
+/* Header Style */
 .header {
   background-color: #774f4f;
   color: white;
@@ -29,36 +29,39 @@ h3 {
   justify-content: space-between;
   align-items: center;
 }
+
 .logo {
   font-size: 24px;
   color: white;
 }
+
 .header nav {
   display: flex;
   gap: 40px;
 }
+
 .header nav a {
   color: white;
   font-weight: bold;
 }
+
 .header nav a:hover {
   text-decoration: underline;
 }
 
-/* Footer style */
-
+/* Footer Style */
 footer {
   background-color: #3d2f2f;
   color: white;
   text-align: center;
   padding: 20px;
 }
+
 footer p {
   margin: 0;
 }
 
-/* Home style */
-
+/* Hero Section */
 .hero {
   background-size: cover;
   background-position: center;
@@ -70,14 +73,17 @@ footer p {
   color: white;
   padding: 60px;
 }
+
 .hero h1 {
   font-size: 55px;
   text-shadow: 2px 2px 5px rgb(0, 0, 0, 0.5);
 }
+
 .p {
   font-size: 30px;
   margin-top: 10px;
 }
+
 .hero button {
   margin-top: 20px;
   padding: 10px 20px;
@@ -89,11 +95,12 @@ footer p {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .hero button:hover {
   background-color: #333;
 }
 
-/* About style */
+/* About Section */
 .about {
   background-size: cover;
   background-position: center;
@@ -104,17 +111,19 @@ footer p {
   align-items: center;
   height: 100vh;
 }
+
 .about-content {
   max-width: 500px;
   text-align: left;
   padding: 30px;
   border-radius: 10px;
 }
+
 .about-content p {
   padding-top: 20px;
 }
-/* watches style */
 
+/* Watches Section */
 .watches {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -123,37 +132,42 @@ footer p {
   margin: 50px;
   color: black;
 }
+
 .watche-card {
-  width: 100px;
+  width: 100%;
   background-color: white;
   padding: 20px;
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
 }
+
 .watche-card img {
   width: 100%;
   height: auto;
   border-radius: 10px;
 }
+
 .watche-card h3 {
   margin-top: 10px;
 }
+
 .watch-card p {
   color: #555;
   font-size: 14px;
 }
+
 .watch-card .price {
   font-size: 20px;
   font-weight: bold;
   color: #d46565;
 }
+
 .watch-card button {
   margin-top: 10px;
   padding: 10px;
   background-color: #6f4a4a;
   color: white;
-
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -163,18 +177,20 @@ footer p {
 .watch-card button:hover {
   background-color: #2d1b1b;
 }
+
 .watch-card img {
   width: 80%;
   height: auto;
   border-radius: 10px;
   transition: transform 0.3s ease;
 }
+
 .watch-card:hover img {
   transform: scale(1.1);
 }
-/* Contact */
 
-.contact-form{
+/* Contact Form */
+.contact-form {
   max-width: 600px;
   margin: 50px;
   padding: 20px;
@@ -183,29 +199,29 @@ footer p {
 }
 
 .contact-form input,
-.contact-form textarea{
+.contact-form textarea {
   width: 100%;
   padding: 10px;
   margin: 10px 0;
   border: 1px solid #533535;
   border-radius: 5px;
 }
-.contact-form button{
+
+.contact-form button {
   padding: 10px 20px;
-  background-color:#895050 ;
+  background-color: #895050;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   width: 100%;
 }
-.contact-form button:hover{
 
+.contact-form button:hover {
   background-color: #745353;
 }
 
-/* Fade-in animation */
-
+/* Fade-in Animation */
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -215,59 +231,123 @@ footer p {
     opacity: 1;
     transform: translateY(0);
   }
-  
 }
-.fade-in{
+
+.fade-in {
   opacity: 0;
   animation: fadeIn 1s ease-out forwards;
 }
-/* Responsive */
 
-@media (max-width: 768px)  {
-  .header{
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
     flex-direction: column;
     text-align: center;
   }
-  .header .logo{
+
+  .header .logo {
     margin-bottom: 10px;
   }
 
-  .header nav{
+  .header nav {
     flex-direction: column;
-    gap:  20px;
+    gap: 20px;
     align-items: center;
   }
-  .hero{
-    height: 70px;
+
+  .hero {
+    height: 70vh;
     padding: 20px;
     text-align: center;
   }
-  .hero h1{
+
+  .hero h1 {
     font-size: 36px;
   }
-   .hero p{
+
+  .hero p {
     font-size: 18px;
   }
-  .hero button{
-    width: 100px;
+
+  .hero button {
+    width: 100%;
     padding: 12px;
     font-size: 16px;
   }
-  .watches{
+
+  .watches {
     grid-template-columns: 1fr;
     margin: 20px;
   }
+
   .about {
     padding: 40px 20px;
     height: auto;
   }
-  .about-content{
+
+  .about-content {
     width: 100%;
     padding: 20px;
   }
-  .contact-form{
+
+  .contact-form {
     margin: 20px;
     padding: 20px;
   }
-  
+
+  /* Adjust text size and other elements for smaller screens */
+  .about-content p {
+    font-size: 1rem;
+  }
+
+  .watch-card h3 {
+    font-size: 16px;
+  }
+
+  .watch-card .price {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 60vh;
+    padding: 15px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .watches {
+    grid-template-columns: 1fr;
+    margin: 10px;
+  }
+
+  .about {
+    padding: 30px 15px;
+  }
+
+  .contact-form {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  /* Further adjust text for small screens */
+  .about-content p {
+    font-size: 0.9rem;
+  }
+
+  .watch-card {
+    padding: 15px;
+  }
 }
